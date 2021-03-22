@@ -3,12 +3,18 @@ package com.example.timetable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Timetable extends AppCompatActivity {
@@ -24,8 +30,34 @@ public class Timetable extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_timetable);
+        Window win = getWindow();
+        win.setContentView(R.layout.activity_main);
 
+        LayoutInflater inflater = (LayoutInflater)getSystemService(
+
+                Context.LAYOUT_INFLATER_SERVICE);
+
+        LinearLayout linear = (LinearLayout)inflater.inflate(R.layout.activity_timetable, null);
+
+        linear.setBackgroundColor(Color.parseColor("#00ff0000"));
+        linear.setGravity(Gravity.CENTER);
+        linear.setPadding(100,100,100,100);
+
+        //파라미터를 세팅해줌
+
+        LinearLayout.LayoutParams paramlinear = new LinearLayout.LayoutParams(
+
+                LinearLayout.LayoutParams.MATCH_PARENT,
+
+                LinearLayout.LayoutParams.MATCH_PARENT
+
+        );
+
+
+
+        //윈도우에 추가시킴
+
+        win.addContentView(linear, paramlinear);
         //시간표 버튼
         timetablebtn = (ImageButton) findViewById(R.id.timetablebtn);
         timetablebtn.setOnClickListener(new View.OnClickListener() {
@@ -64,5 +96,6 @@ public class Timetable extends AppCompatActivity {
             }
         });
     }
+
 }
 

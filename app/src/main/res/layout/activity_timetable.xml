@@ -4,16 +4,18 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:layout_margin="30dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
     <ImageButton
-        android:layout_width="100dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:background="#00ff0000"
         android:layout_gravity="center"
-        android:src="@drawable/timetable"
-        android:id="@+id/timetablebtn">
+        android:src="@drawable/b_timetab"
+        android:id="@+id/timetablebtn"
+        android:layout_marginBottom="10dp">
 
     </ImageButton>
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"

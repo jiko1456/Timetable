@@ -4,15 +4,13 @@
     <item
 
         android:drawable="@color/white"
-
         android:state_pressed="false">
 
     </item>
 
     <item
 
-        android:drawable="@color/orange"
-
+        android:drawable="@color/white"
         android:state_pressed="true">
 
     </item>

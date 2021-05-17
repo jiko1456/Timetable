@@ -6,6 +6,7 @@
     android:layout_margin="30dp"
     android:orientation="vertical"
     >
+
     <ImageButton
         android:layout_width="70dp"
         android:layout_height="wrap_content"
@@ -15,9 +16,9 @@
         android:layout_gravity="center"
         android:src="@drawable/b_timetab"
         android:id="@+id/timetablebtn"
-        android:layout_marginBottom="10dp">
+        android:layout_marginBottom="10dp"/>
 
-    </ImageButton>
+
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -28,13 +29,13 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="440dp"
             android:orientation="vertical">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/orange">
+                android:background="@drawable/cell_day_shape">
 
                 <TextView
                     android:text=""
@@ -92,30 +93,31 @@
             //1교시
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1">
 
                 <TextView
                     android:text="9"
-                    android:layout_width="30dp"
+                    android:layout_width="15dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/orange"
+                    android:background="#f39801"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:gravity="right"
                     />
-                <Button
+                <TextView
                     android:text="월"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
                     android:gravity="center"
+                    android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:id="@+id/mon1"
                     android:background="@drawable/cell_shape"
                     />
-                <Button
+                <TextView
                     android:text="화"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -126,7 +128,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/tue1"
                     />
-                <Button
+                <TextView
                     android:text="수"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -137,7 +139,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/wed1"
                     />
-                <Button
+                <TextView
                     android:text="목"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -148,7 +150,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/thu1"
                     />
-                <Button
+                <TextView
                     android:text="금"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -164,20 +166,19 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/orange">
+                android:layout_weight="1">
 
                 <TextView
                     android:text="10"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/orange"
+                    android:background="#f39801"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:gravity="right"
                     />
-                <Button
+                <TextView
                     android:text="월"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -188,7 +189,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/mon2"
                     />
-                <Button
+                <TextView
                     android:text="화"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -199,7 +200,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/tue2"
                     />
-                <Button
+                <TextView
                     android:text="수"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -210,7 +211,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/wed2"
                     />
-                <Button
+                <TextView
                     android:text="목"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -221,7 +222,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/thu2"
                     />
-                <Button
+                <TextView
                     android:text="금"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -238,20 +239,19 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/orange">
+                android:layout_weight="1">
 
                 <TextView
                     android:text="11"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/orange"
+                    android:background="#f39801"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:gravity="right"
                     />
-                <Button
+                <TextView
                     android:text="월"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -262,7 +262,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/mon3"
                     />
-                <Button
+                <TextView
                     android:text="화"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -273,7 +273,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/tue3"
                     />
-                <Button
+                <TextView
                     android:text="수"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -284,7 +284,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/wed3"
                     />
-                <Button
+                <TextView
                     android:text="목"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -295,7 +295,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/thu3"
                     />
-                <Button
+                <TextView
                     android:text="금"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -311,20 +311,19 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/orange">
+                android:layout_weight="1">
 
                 <TextView
                     android:text="12"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/orange"
+                    android:background="#f39801"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:gravity="right"
                     />
-                <Button
+                <TextView
                     android:text="월"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -335,7 +334,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/mon4"
                     />
-                <Button
+                <TextView
                     android:text="화"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -346,7 +345,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/tue4"
                     />
-                <Button
+                <TextView
                     android:text="수"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -357,7 +356,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/wed4"
                     />
-                <Button
+                <TextView
                     android:text="목"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -368,7 +367,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/thu4"
                     />
-                <Button
+                <TextView
                     android:text="금"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -384,20 +383,19 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/orange">
+                android:layout_weight="1">
 
                 <TextView
                     android:text="13"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/orange"
+                    android:background="#f39801"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:gravity="right"
                     />
-                <Button
+                <TextView
                     android:text="월"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -408,7 +406,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/mon5"
                     />
-                <Button
+                <TextView
                     android:text="화"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -419,7 +417,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/tue5"
                     />
-                <Button
+                <TextView
                     android:text="수"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -430,7 +428,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/wed5"
                     />
-                <Button
+                <TextView
                     android:text="목"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -441,7 +439,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/thu5"
                     />
-                <Button
+                <TextView
                     android:text="금"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -458,20 +456,19 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/orange">
+                android:layout_weight="1">
 
                 <TextView
                     android:text="14"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/orange"
+                    android:background="#f39801"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:gravity="right"
                     />
-                <Button
+                <TextView
                     android:text="월"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -482,7 +479,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/mon6"
                     />
-                <Button
+                <TextView
                     android:text="화"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -493,7 +490,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/tue6"
                     />
-                <Button
+                <TextView
                     android:text="수"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -504,7 +501,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/wed6"
                     />
-                <Button
+                <TextView
                     android:text="목"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -515,7 +512,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/thu6"
                     />
-                <Button
+                <TextView
                     android:text="금"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -531,20 +528,19 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/orange">
+                android:layout_weight="1">
 
                 <TextView
                     android:text="15"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/orange"
+                    android:background="#f39801"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:gravity="right"
                     />
-                <Button
+                <TextView
                     android:text="월"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -555,7 +551,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/mon7"
                     />
-                <Button
+                <TextView
                     android:text="화"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -566,7 +562,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/tue7"
                     />
-                <Button
+                <TextView
                     android:text="수"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -577,7 +573,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/wed7"
                     />
-                <Button
+                <TextView
                     android:text="목"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -588,7 +584,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/thu7"
                     />
-                <Button
+                <TextView
                     android:text="금"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -604,20 +600,19 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/orange">
+                android:layout_weight="1">
 
                 <TextView
                     android:text="16"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/orange"
+                    android:background="#f39801"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:gravity="right"
                     />
-                <Button
+                <TextView
                     android:text="월"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -628,7 +623,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/mon8"
                     />
-                <Button
+                <TextView
                     android:text="화"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -639,7 +634,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/tue8"
                     />
-                <Button
+                <TextView
                     android:text="수"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -650,7 +645,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/wed8"
                     />
-                <Button
+                <TextView
                     android:text="목"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -661,7 +656,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/thu8"
                     />
-                <Button
+                <TextView
                     android:text="금"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -678,20 +673,19 @@
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/orange">
+                android:layout_weight="1">
 
                 <TextView
                     android:text="17"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/orange"
+                    android:background="@drawable/cell_time_shape_bottom"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
                     android:gravity="right"
                     />
-                <Button
+                <TextView
                     android:text="월"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -702,7 +696,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/mon9"
                     />
-                <Button
+                <TextView
                     android:text="화"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -712,7 +706,7 @@
                     android:textStyle="bold"
                     android:background="@drawable/cell_shape"
                     android:id="@+id/tue9"/>
-                <Button
+                <TextView
                     android:text="수"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -723,7 +717,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/wed9"
                     />
-                <Button
+                <TextView
                     android:text="목"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -734,7 +728,7 @@
                     android:background="@drawable/cell_shape"
                     android:id="@+id/thu9"
                     />
-                <Button
+                <TextView
                     android:text="금"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -742,7 +736,7 @@
                     android:gravity="center"
                     android:textColor="#ffffff"
                     android:textStyle="bold"
-                    android:background="@drawable/cell_shape"
+                    android:background="@drawable/cell_shape_bottom"
                     android:id="@+id/fri9"
                     />
             </TableRow>
